@@ -21,7 +21,7 @@ const (
 	feedFile  = "feeds.txt"
 )
 
-// Subscriptions contain all teh subscriptions data
+// Subscriptions contain all the subscriptions data
 type Subscriptions struct {
 	Subscriptions map[string]*Subscription
 }
@@ -63,7 +63,7 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	localSubscriptions, err := generateFeedFromFIle(feedFile, channelID)
+	localSubscriptions, err := generateFeedFromFile(feedFile, channelID)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
@@ -101,7 +101,7 @@ func generateFeedForDB(local, remote *Subscriptions) *Subscriptions {
 	return remote
 }
 
-func generateFeedFromFIle(filename, channelID string) (*Subscriptions, error) {
+func generateFeedFromFile(filename, channelID string) (*Subscriptions, error) {
 	src, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return nil, err
