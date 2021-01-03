@@ -92,3 +92,4 @@ https://ajxchapman.github.io/feed
 https://blog.jessfraz.com/index.xml
 https://bravenewgeek.com/feed/
 https://joyce.fyi/posts/index.xml
+https://blog.thelifeofkenneth.com/feeds/posts/default?alt=rss

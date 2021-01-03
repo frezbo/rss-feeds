@@ -147,6 +147,13 @@ func readFeedFromDB(db *sql.DB) (*Subscriptions, error) {
 func writeFeedToDB(db *sql.DB, bytes []byte) (int, error) {
 	result, err := db.Exec(`insert into pluginkeyvaluestore(pluginid, pkey, pvalue, expireat) values('rssfeed', 'subscriptions', $1, 0)`, bytes)
 	if err != nil {
+		if strings.Contains(err.Error(), "duplicate key value violates unique constraint") {
+			result, err = db.Exec(`update pluginkeyvaluestore set pvalue=$1 where pluginid='rssfeed' and pkey=' '`, bytes)
+			if err != nil {
+				return 0, err
+			}
+		}
+
 		return 0, err
 	}
 	rowsAffected, err := result.RowsAffected()
