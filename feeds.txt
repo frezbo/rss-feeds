@@ -96,3 +96,5 @@ https://blog.thelifeofkenneth.com/feeds/posts/default?alt=rss
 https://feeds.transistor.fm/on-the-metal-0294649e-ec23-4eab-975a-9eb13fd94e06
 https://oxide.computer/blog/index.xml
 https://buttondown.email/123dev/rss
+https://anchor.fm/s/283112bc/podcast/rss
+
