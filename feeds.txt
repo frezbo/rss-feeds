@@ -98,4 +98,5 @@ https://oxide.computer/blog/index.xml
 https://buttondown.email/123dev/rss
 https://anchor.fm/s/283112bc/podcast/rss
 https://www.feistyduck.com/bulletproof-tls-newsletter/feed
+https://www.backblaze.com/blog/feed/
 
