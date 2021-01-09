@@ -100,4 +100,5 @@ https://anchor.fm/s/283112bc/podcast/rss
 https://www.feistyduck.com/bulletproof-tls-newsletter/feed
 https://www.backblaze.com/blog/feed/
 https://jvns.ca/categories/rc-2020/atom.xml
+https://rosenzweig.io/feed.xml
 
