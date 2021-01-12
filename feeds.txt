@@ -102,4 +102,5 @@ https://www.backblaze.com/blog/feed/
 https://jvns.ca/categories/rc-2020/atom.xml
 https://rosenzweig.io/feed.xml
 https://feeds.transistor.fm/screaming-in-the-cloud
+https://krebsonsecurity.com/feed/
 
