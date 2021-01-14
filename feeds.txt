@@ -104,4 +104,5 @@ https://rosenzweig.io/feed.xml
 https://feeds.transistor.fm/screaming-in-the-cloud
 https://krebsonsecurity.com/feed/
 https://research.nccgroup.com/feed/
+https://blog.artifacthub.io/index.xml
 
