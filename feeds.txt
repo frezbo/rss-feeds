@@ -106,4 +106,5 @@ https://krebsonsecurity.com/feed/
 https://research.nccgroup.com/feed/
 https://blog.artifacthub.io/index.xml
 http://feeds.hanselman.com/ScottHanselman
+https://tailscale.com/blog/index.xml
 
