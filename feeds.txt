@@ -105,4 +105,5 @@ https://feeds.transistor.fm/screaming-in-the-cloud
 https://krebsonsecurity.com/feed/
 https://research.nccgroup.com/feed/
 https://blog.artifacthub.io/index.xml
+http://feeds.hanselman.com/ScottHanselman
 
