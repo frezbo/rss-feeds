@@ -110,4 +110,4 @@ https://tailscale.com/blog/index.xml
 https://blog.kobol.io/feed.xml
 https://modberry.techbase.eu/feed/
 https://rancher.com/blog/index.xml
-
+https://blog.my1.dev/feed

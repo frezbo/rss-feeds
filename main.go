@@ -107,11 +107,14 @@ func generateFeedFromFile(filename, channelID string) (*Subscriptions, error) {
 		return nil, err
 	}
 	split := strings.Split(string(src), "\n")
-	split = split[0 : len(split)-1]
 	subs := &Subscriptions{Subscriptions: map[string]*Subscription{}}
 	for _, url := range split {
 		// skip commented out feeds
 		if strings.HasPrefix(url, "# ") {
+			continue
+		}
+		// skip empty lines
+		if url == "" {
 			continue
 		}
 		subscriptionID := fmt.Sprintf("%s/%s", channelID, url)
