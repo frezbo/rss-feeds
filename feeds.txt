@@ -87,7 +87,7 @@ https://www.hashicorp.com/blog/feed.xml
 https://cloudirregular.substack.com/feed/
 https://solokeys.com/blogs/news.atom
 https://www.itchyboots.com/motorcycle-stories-blog?format=rss
-http://digest.systems.recipes/?format=rss
+https://digest.systems.recipes/feed/
 https://ajxchapman.github.io/feed
 https://blog.jessfraz.com/index.xml
 https://bravenewgeek.com/feed/
@@ -105,7 +105,7 @@ https://feeds.transistor.fm/screaming-in-the-cloud
 https://krebsonsecurity.com/feed/
 https://research.nccgroup.com/feed/
 https://blog.artifacthub.io/index.xml
-http://feeds.hanselman.com/ScottHanselman
+https://feeds.hanselman.com/ScottHanselman
 https://tailscale.com/blog/index.xml
 https://blog.kobol.io/feed.xml
 https://modberry.techbase.eu/feed/
