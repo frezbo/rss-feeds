@@ -45,7 +45,7 @@ https://www.electroboom.com/?feed=rss2
 https://api.quantamagazine.org/feed/
 https://blog.bacongobbler.com/index.xml
 https://blog.dave.tf/index.xml
-https://falco.org/index.xml
+https://falco.org/blog/feed.xml
 https://nivenly.com/feed/
 https://www.jeffgeerling.com/blog.xml
 http://www.brendangregg.com/blog/rss.xml
