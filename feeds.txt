@@ -112,3 +112,4 @@ https://modberry.techbase.eu/feed/
 https://rancher.com/blog/index.xml
 https://blog.my1.dev/feed
 https://turingpi.com/blog/feed
+https://jason.detiberus.net/posts/index.xml
