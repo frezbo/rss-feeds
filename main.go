@@ -17,8 +17,11 @@ const (
 	user   = "mattermost"
 	dbname = "mattermost"
 	// mattermost channel id
-	channelID = "cwt9qwjzb7gjzca5d8u5s49ewo"
-	feedFile  = "feeds.txt"
+	channelID  = "cwt9qwjzb7gjzca5d8u5s49ewo"
+	feedFile   = "feeds.txt"
+	colorRed   = "\033[31m"
+	colorGreen = "\033[32m"
+	colorReset = "\033[0m"
 )
 
 // Subscriptions contain all the subscriptions data
@@ -48,11 +51,11 @@ func main() {
 
 	// open database
 	db, err := sql.Open("postgres", psqlconn)
-	defer db.Close()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	defer db.Close()
 	err = db.Ping()
 	if err != nil {
 		fmt.Println(err)
@@ -68,8 +71,8 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	updatedSubscriptions := generateFeedForDB(localSubscriptions, remoteSubscriptions)
-	if updatedSubscriptions == nil {
+	updatedSubscriptions := generateFeedForRemote(localSubscriptions, remoteSubscriptions)
+	if len(updatedSubscriptions.Subscriptions) == len(remoteSubscriptions.Subscriptions) {
 		fmt.Println("remote in sync with feed list")
 	} else {
 		bytes, err := json.Marshal(updatedSubscriptions)
@@ -86,19 +89,34 @@ func main() {
 	}
 }
 
-func generateFeedForDB(local, remote *Subscriptions) *Subscriptions {
-	var count int
-	for subscriptionID, SubscriptionData := range local.Subscriptions {
-		if _, ok := remote.Subscriptions[subscriptionID]; !ok {
-			count++
-			remote.Subscriptions[subscriptionID] = SubscriptionData
+func generateFeedForRemote(local, remote *Subscriptions) *Subscriptions {
+	updatedRemote := &Subscriptions{Subscriptions: map[string]*Subscription{}}
+	var newSubsToAdd = make(map[string]*Subscription, len(local.Subscriptions))
+
+	// do a deep clone of the existing remote
+	for subscriptionID, subscriptionData := range remote.Subscriptions {
+		updatedRemote.Subscriptions[subscriptionID] = subscriptionData
+	}
+
+	for subscriptionID, subscriptionData := range local.Subscriptions {
+		newSubsToAdd[subscriptionID] = subscriptionData
+	}
+
+	for i, j := range remote.Subscriptions {
+		switch val, ok := local.Subscriptions[i]; {
+		case ok && val.URL == j.URL:
+			delete(newSubsToAdd, i)
+		case !ok:
+			delete(updatedRemote.Subscriptions, i)
+			fmt.Printf("%s-\t%s\n", string(colorRed), j.URL)
 		}
 	}
-	// if count is zero, there is no change
-	if count == 0 {
-		return nil
+	for i, j := range newSubsToAdd {
+		fmt.Printf("%s+\t%s\n", string(colorGreen), j.URL)
+		updatedRemote.Subscriptions[i] = j
 	}
-	return remote
+	fmt.Print(string(colorReset))
+	return updatedRemote
 }
 
 func generateFeedFromFile(filename, channelID string) (*Subscriptions, error) {
