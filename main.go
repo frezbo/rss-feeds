@@ -71,8 +71,8 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	updatedSubscriptions := generateFeedForRemote(localSubscriptions, remoteSubscriptions)
-	if len(updatedSubscriptions.Subscriptions) == len(remoteSubscriptions.Subscriptions) {
+	updatedSubscriptions, changed := generateFeedForRemote(localSubscriptions, remoteSubscriptions)
+	if !changed {
 		fmt.Println("remote in sync with feed list")
 	} else {
 		bytes, err := json.Marshal(updatedSubscriptions)
@@ -89,9 +89,10 @@ func main() {
 	}
 }
 
-func generateFeedForRemote(local, remote *Subscriptions) *Subscriptions {
+func generateFeedForRemote(local, remote *Subscriptions) (*Subscriptions, bool) {
 	updatedRemote := &Subscriptions{Subscriptions: map[string]*Subscription{}}
 	var newSubsToAdd = make(map[string]*Subscription, len(local.Subscriptions))
+	var changed = false
 
 	// do a deep clone of the existing remote
 	for subscriptionID, subscriptionData := range remote.Subscriptions {
@@ -109,14 +110,16 @@ func generateFeedForRemote(local, remote *Subscriptions) *Subscriptions {
 		case !ok:
 			delete(updatedRemote.Subscriptions, i)
 			fmt.Printf("%s-\t%s\n", string(colorRed), j.URL)
+			changed = true
 		}
 	}
 	for i, j := range newSubsToAdd {
 		fmt.Printf("%s+\t%s\n", string(colorGreen), j.URL)
 		updatedRemote.Subscriptions[i] = j
+		changed = true
 	}
 	fmt.Print(string(colorReset))
-	return updatedRemote
+	return updatedRemote, changed
 }
 
 func generateFeedFromFile(filename, channelID string) (*Subscriptions, error) {
