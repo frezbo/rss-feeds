@@ -46,7 +46,7 @@ https://api.quantamagazine.org/feed/
 https://blog.bacongobbler.com/index.xml
 https://blog.dave.tf/index.xml
 https://falco.org/blog/feed.xml
-https://nivenly.com/src/index.xml
+https://nivenly.com/lib/index.xml
 https://www.jeffgeerling.com/blog.xml
 http://www.brendangregg.com/blog/rss.xml
 https://blog.trailofbits.com/feed/
