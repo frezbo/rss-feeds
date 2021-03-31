@@ -118,3 +118,4 @@ https://aeva.online/rss.xml
 https://rawkode.news/?format=rss
 https://anchor.fm/s/43737588/podcast/rss
 https://blog.tonari.no/index.xml
+https://therealprof.github.io/rss.xml
