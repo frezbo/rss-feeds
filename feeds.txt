@@ -120,3 +120,4 @@ https://anchor.fm/s/43737588/podcast/rss
 https://blog.tonari.no/index.xml
 https://therealprof.github.io/rss.xml
 https://www.talos-systems.com/feed/
+https://zwischenzugs.com/feed/
