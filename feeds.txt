@@ -123,4 +123,5 @@ https://www.talos-systems.com/feed/
 https://zwischenzugs.com/feed/
 https://jamesachambers.com/feed/
 https://gianarb.it/atom.xml
+https://sprocketfox.io/xssfox/index.xml
 
