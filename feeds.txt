@@ -128,4 +128,5 @@ https://people.kernel.org/bleung/feed/
 http://feeds.feedburner.com/IanLewisBlog
 https://ii.coop/blog/index.xml
 https://confidentialcomputing.io/feed/
+https://alex.kaskaso.li/feed.xml
 
