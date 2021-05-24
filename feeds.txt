@@ -130,4 +130,5 @@ https://ii.coop/blog/index.xml
 https://confidentialcomputing.io/feed/
 https://alex.kaskaso.li/feed.xml
 https://blog.thea.codes/feed.xml
+https://yetiops.net/posts/index.xml
 
