@@ -133,3 +133,4 @@ https://confidentialcomputing.io/feed/
 https://alex.kaskaso.li/feed.xml
 https://blog.thea.codes/feed.xml
 https://yetiops.net/posts/index.xml
+https://www.justingarrison.com/blog/index.xml
