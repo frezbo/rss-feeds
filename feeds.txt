@@ -136,4 +136,5 @@ https://yetiops.net/posts/index.xml
 https://www.justingarrison.com/blog/index.xml
 https://www.leebriggs.co.uk/feed.xml
 https://actualcontrol.substack.com/feed
+https://pinniped.dev/blog/index.xml
 
