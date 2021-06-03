@@ -137,4 +137,5 @@ https://www.justingarrison.com/blog/index.xml
 https://www.leebriggs.co.uk/feed.xml
 https://actualcontrol.substack.com/feed
 https://pinniped.dev/blog/index.xml
+https://blog.sigstore.dev/feed
 
