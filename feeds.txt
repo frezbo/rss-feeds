@@ -138,4 +138,5 @@ https://www.leebriggs.co.uk/feed.xml
 https://actualcontrol.substack.com/feed
 https://pinniped.dev/blog/index.xml
 https://blog.sigstore.dev/feed
+https://www.min.at/prinz/?x=feed:rss2
 
