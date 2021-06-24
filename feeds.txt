@@ -139,4 +139,6 @@ https://actualcontrol.substack.com/feed
 https://pinniped.dev/blog/index.xml
 https://blog.sigstore.dev/feed
 https://www.min.at/prinz/?x=feed:rss2
+https://ungleich.ch/u/blog/feed.xml
+https://www.observability.blog/rss/
 
