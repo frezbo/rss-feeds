@@ -143,4 +143,5 @@ https://ungleich.ch/u/blog/feed.xml
 https://www.observability.blog/rss/
 https://hoverbear.org/rss.xml
 https://world.hey.com/corsair/feed.atom
+https://www.brian.dev/index.xml
 
