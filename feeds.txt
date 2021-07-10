@@ -144,4 +144,5 @@ https://www.observability.blog/rss/
 https://hoverbear.org/rss.xml
 https://world.hey.com/corsair/feed.atom
 https://www.brian.dev/index.xml
+https://anaisurl.com/rss/
 
