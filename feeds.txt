@@ -146,4 +146,5 @@ https://world.hey.com/corsair/feed.atom
 https://www.brian.dev/index.xml
 https://anaisurl.com/rss/
 http://anweshadas.in/rss/
+https://evancordell.com/posts/index.xml
 
