@@ -147,4 +147,6 @@ https://www.brian.dev/index.xml
 https://anaisurl.com/rss/
 http://anweshadas.in/rss/
 https://evancordell.com/posts/index.xml
+https://rpi4-uefi.dev/feed/
+https://goteleport.com/blog/index.xml
 
