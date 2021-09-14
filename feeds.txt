@@ -151,4 +151,5 @@ https://rpi4-uefi.dev/feed/
 https://goteleport.com/blog/index.xml
 https://blog.tofile.dev/feed.xml
 https://kubernetespodcast.com/feeds/audio.xml
+https://changelog.com/shipit/feed
 
