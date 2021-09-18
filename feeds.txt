@@ -153,4 +153,5 @@ https://blog.tofile.dev/feed.xml
 https://kubernetespodcast.com/feeds/audio.xml
 https://changelog.com/shipit/feed
 https://awsteele.com/feed.xml
+https://blog.t8012.dev/rss/
 
