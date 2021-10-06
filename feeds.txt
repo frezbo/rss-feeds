@@ -121,7 +121,7 @@ https://rawkode.news/?format=rss
 https://anchor.fm/s/43737588/podcast/rss
 https://blog.tonari.no/index.xml
 https://therealprof.github.io/rss.xml
-https://www.talos-systems.com/feed/
+https://www.siderolabs.com/feed/
 https://zwischenzugs.com/feed/
 https://jamesachambers.com/feed/
 https://gianarb.it/atom.xml
@@ -155,4 +155,6 @@ https://changelog.com/shipit/feed
 https://awsteele.com/feed.xml
 https://blog.t8012.dev/rss/
 https://www.opencompute.org/documents/
+https://feeds.twit.tv/sn.xml
+https://ferrous-systems.com/blog/feed.xml
 
